@@ -115,7 +115,7 @@ def _compute_laplacian_field_gpu(grad_x, grad_y):
     return div
 
 # ---------------------------
-# 1) Reconstruct from gradients (GPU)
+# Reconstruct from gradients (GPU)
 # ---------------------------
 def reconstruct_from_gradients(gradx, grady, boundary_img):
     """
@@ -176,7 +176,7 @@ def reconstruct_from_gradients(gradx, grady, boundary_img):
     return res.get()
 
 # ---------------------------
-# 2) Seamless Cloning (GPU)
+# Seamless Cloning (GPU)
 # ---------------------------
 def seamless_clone(src, dst, mask, offset, mixed=True, tol=1e-5):
     """
